@@ -1,12 +1,12 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>FalconLab | Online Smart Testing System</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,0&display=swap" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,0&display=swap" />
   <link rel="icon" href="./icon-transparent.png">
   <style>
     :root {
@@ -109,10 +109,10 @@
     .hero-image {
       position: relative;
       padding: 24px;
-      background: linear-gradient(180deg, rgba(255,255,255,0.9), rgba(243,248,255,0.95));
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(243, 248, 255, 0.95));
       border-radius: 32px;
       box-shadow: var(--shadow);
-      border: 1px solid rgba(255,255,255,0.72);
+      border: 1px solid rgba(255, 255, 255, 0.72);
     }
 
     .hero-image::before {
@@ -151,6 +151,55 @@
       margin: 16px auto 0;
       border-radius: 999px;
       background: var(--accent);
+    }
+
+    .whats-new-section {
+      margin-bottom: 56px;
+    }
+
+    .whats-new-card {
+      background: rgba(255, 255, 255, 0.95);
+      border: 1px solid rgba(15, 33, 70, 0.08);
+      border-radius: 24px;
+      padding: 20px 24px;
+      box-shadow: 0 18px 40px rgba(15, 33, 70, 0.05);
+      text-align: center;
+    }
+
+    .whats-new-content {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .whats-new-item {
+      margin: 0;
+      color: var(--muted);
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+
+    .get-started-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 22px;
+      margin-top: 8px;
+      border-radius: 999px;
+      background: var(--accent);
+      color: #fff;
+      font-weight: 600;
+      text-decoration: none;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      box-shadow: 0 10px 24px rgba(32, 103, 255, 0.2);
+    }
+
+    .get-started-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 28px rgba(32, 103, 255, 0.24);
     }
 
     .feature-grid {
@@ -597,7 +646,7 @@
 
     .footer-brand p {
       margin: 0;
-      color: rgba(255,255,255,0.76);
+      color: rgba(255, 255, 255, 0.76);
       max-width: 360px;
       line-height: 1.75;
     }
@@ -611,7 +660,7 @@
       margin: 0;
       padding: 0;
       list-style: none;
-      color: rgba(255,255,255,0.8);
+      color: rgba(255, 255, 255, 0.8);
       display: grid;
       gap: 10px;
     }
@@ -628,12 +677,223 @@
       font-weight: 600;
     }
 
+    .hero-ai-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 22px;
+      padding: 9px 18px;
+      border-radius: 999px;
+      background: linear-gradient(90deg, rgba(157, 78, 255, 0.32), rgba(32, 103, 255, 0.32));
+      border: 1px solid rgba(185, 164, 255, 0.5);
+      color: #ffffff;
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+    }
+
+    .hero-ai-badge .material-symbols-outlined {
+      font-size: 1.15rem;
+      color: #c7b8ff;
+    }
+
+    .ai-section {
+      margin-bottom: 56px;
+      padding: 42px;
+      border-radius: 32px;
+      background: linear-gradient(135deg, #140a33 0%, #27116d 55%, #2067ff 145%);
+      color: #f6fbff;
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .ai-section::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background: radial-gradient(circle at top right, rgba(157, 78, 255, 0.32), transparent 42%),
+        radial-gradient(circle at bottom left, rgba(32, 103, 255, 0.22), transparent 38%);
+    }
+
+    .ai-badge {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 16px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.26);
+      color: #ffffff;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .ai-badge .material-symbols-outlined {
+      font-size: 1.1rem;
+      color: #c7b8ff;
+    }
+
+    .ai-section h3 {
+      position: relative;
+      margin: 20px 0 14px;
+      font-size: clamp(1.7rem, 2.6vw, 2.4rem);
+      letter-spacing: -0.04em;
+      line-height: 1.15;
+    }
+
+    .ai-section h3 span {
+      background: linear-gradient(90deg, #b9a4ff, #7fd9ff);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .ai-lead {
+      position: relative;
+      margin: 0 0 30px;
+      max-width: 680px;
+      color: rgba(246, 251, 255, 0.85);
+      line-height: 1.85;
+      font-size: 1rem;
+    }
+
+    .ai-grid {
+      position: relative;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+      margin-bottom: 30px;
+    }
+
+    .ai-point {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      padding: 18px;
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+    }
+
+    .ai-point .ai-icon {
+      width: 42px;
+      height: 42px;
+      display: grid;
+      place-items: center;
+      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.16);
+      color: #cdd9ff;
+      font-size: 1.3rem;
+      flex-shrink: 0;
+    }
+
+    .ai-point h4 {
+      margin: 0 0 6px;
+      font-size: 0.98rem;
+    }
+
+    .ai-point p {
+      margin: 0;
+      color: rgba(246, 251, 255, 0.78);
+      font-size: 0.9rem;
+      line-height: 1.7;
+    }
+
+    .ai-powered-by {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 18px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: rgba(246, 251, 255, 0.92);
+      font-size: 0.9rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background 0.2s ease;
+    }
+
+    .ai-powered-by:hover {
+      background: rgba(255, 255, 255, 0.18);
+    }
+
+    .ai-powered-by .material-symbols-outlined {
+      font-size: 1.15rem;
+      color: #b9a4ff;
+    }
+
+    .feature-card.ai-card {
+      position: relative;
+      overflow: hidden;
+      background: linear-gradient(135deg, #f5f0ff 0%, #eef5ff 100%);
+      border: 1px solid rgba(121, 77, 255, 0.28);
+      grid-column: 1 / -1;
+      min-height: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+      text-align: left;
+    }
+
+    .feature-card.ai-card .icon {
+      background: rgba(121, 77, 255, 0.14);
+      color: #6a3cff;
+      margin: 0;
+    }
+
+    .feature-card.ai-card .ai-card-copy h4 {
+      margin: 0 0 8px;
+      font-size: 1.1rem;
+    }
+
+    .feature-card.ai-card .ai-card-copy h4 em {
+      font-style: normal;
+      color: #6a3cff;
+    }
+
+    .feature-card.ai-card .ai-card-copy p {
+      max-width: 640px;
+    }
+
+    .ai-card-tag {
+      display: inline-block;
+      padding: 5px 12px;
+      border-radius: 999px;
+      background: linear-gradient(90deg, #6a3cff, #2067ff);
+      color: #ffffff;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
     @media (max-width: 1080px) {
+
       .feature-grid,
       .why-choose,
       .who-what,
-      .cta-banner {
+      .cta-banner,
+      .ai-grid {
         grid-template-columns: 1fr;
+      }
+
+      .feature-card.ai-card {
+        flex-direction: column;
+        text-align: center;
+        gap: 14px;
+      }
+
+      .feature-card.ai-card .ai-card-copy p {
+        margin: 0 auto;
       }
 
       .details-cards {
@@ -676,8 +936,17 @@
         gap: 28px;
       }
 
+      .ai-section {
+        padding: 30px 24px;
+      }
+
       .hero-image {
         padding: 18px;
+      }
+
+      .whats-new-content {
+        flex-direction: column;
+        gap: 10px;
       }
 
       .info-strip,
@@ -699,6 +968,7 @@
     }
   </style>
 </head>
+
 <body>
   <div class="page">
     <section class="hero">
@@ -711,10 +981,31 @@
           </div>
         </div>
         <h2>ONLINE <span>SMART</span> TESTING SYSTEM</h2>
-        <p class="hero-text">FalconLab Testing System is an NTA-like online testing platform designed for coaching institutes and educational organizations to conduct tests seamlessly, evaluate instantly and analyze performance deeply.</p>
+        <br>
+        <div class="hero-ai-badge">
+          <span class="material-symbols-outlined">auto_awesome</span>
+          NEW: AI Test Analysis powered by Sarvam AI
+        </div>
+        <p class="hero-text">FalconLab Testing System is an NTA-like online testing platform designed for coaching
+          institutes and educational organizations to conduct tests seamlessly, evaluate instantly and analyze
+          performance deeply.</p>
       </div>
       <div class="hero-image">
         <img src="testing system picture-1.png" alt="Testing system interface" />
+      </div>
+    </section>
+
+    <section class="whats-new-section" aria-label="What's new">
+      <div class="whats-new-card">
+        <div class="section-title">
+          <h3>What's new</h3>
+        </div>
+        <div class="whats-new-content">
+          <p class="whats-new-item"><span class="ai-card-tag">Now Live</span></p>
+          <p class="whats-new-item"><strong>Latest Release</strong> — AI Test Analysis, powered by Sarvam AI</p>
+          <p class="whats-new-item"><strong>Version</strong> — 1.1</p>
+          <a class="get-started-btn" href="./getting-started">Get Started</a>
+        </div>
       </div>
     </section>
 
@@ -730,11 +1021,6 @@
             <p>Experience a familiar interface designed for fast test navigation and clear student engagement.</p>
           </article>
           <article class="choose-card">
-            <img src="testing system picture-4.png" alt="Create Tests Easily" />
-            <h4>Create Tests Easily</h4>
-            <p>Build complete exams quickly with intuitive controls, section setup, and automated question workflows.</p>
-          </article>
-          <article class="choose-card">
             <img src="testing system picture-2.png" alt="Detailed Reports" />
             <h4>Detailed Reports</h4>
             <p>View rich analytics with scorecards, subject breakdowns, and response summaries for better insight.</p>
@@ -742,10 +1028,64 @@
           <article class="choose-card">
             <img src="testing system picture-3.png" alt="Response Sheet" />
             <h4>Response Sheet</h4>
-            <p>Access student response sheets instantly for review, verification, and meaningful performance analysis.</p>
+            <p>Access student response sheets instantly for review, verification, and meaningful performance analysis.
+            </p>
+          </article>
+          <article class="choose-card">
+            <img src="testing system picture-5.png" alt="Response Sheet" />
+            <h4>AI test analysis</h4>
+            <p>AI performance report provides chapter-wise analysis helps students review their strengths and weaknesses .
+            </p>
+          </article>
+          <article class="choose-card">
+            <img src="testing system picture-4.png" alt="Create Tests Easily" />
+            <h4>Create Tests Easily</h4>
+            <p>Build complete exams quickly with intuitive controls, section setup, and automated question workflows.
+            </p>
           </article>
         </div>
       </div>
+    </section>
+
+    <section class="ai-section" aria-label="AI Test Analysis">
+      <span class="ai-badge"><span class="material-symbols-outlined">auto_awesome</span> New Feature</span>
+      <h3>AI Test Analysis, <span>Powered by Sarvam AI</span></h3>
+      <p class="ai-lead">Go beyond scores and rank lists. FalconLab now uses AI to read every test attempt and turn raw
+        performance data into clear, actionable guidance for teachers and students.</p>
+      <div class="ai-grid">
+        <div class="ai-point">
+          <span class="ai-icon material-symbols-outlined">psychology</span>
+          <div>
+            <h4>Smart Performance Insights</h4>
+            <p>AI-generated summaries that explain what each result actually means, in simple language.</p>
+          </div>
+        </div>
+        <div class="ai-point">
+          <span class="ai-icon material-symbols-outlined">troubleshoot</span>
+          <div>
+            <h4>Strengths & Weaknesses Detection</h4>
+            <p>Pinpoint exact subjects, topics and question types where a student is excelling or struggling.</p>
+          </div>
+        </div>
+        <div class="ai-point">
+          <span class="ai-icon material-symbols-outlined">tips_and_updates</span>
+          <div>
+            <h4>Personalized Improvement Tips</h4>
+            <p>Every student gets a tailored action plan for the next test instead of generic advice.</p>
+          </div>
+        </div>
+        <div class="ai-point">
+          <span class="ai-icon material-symbols-outlined">trending_up</span>
+          <div>
+            <h4>Track Progress Over Time</h4>
+            <p>AI compares attempts across tests to highlight growth patterns and recurring mistakes.</p>
+          </div>
+        </div>
+      </div>
+      <a class="ai-powered-by" href="https://www.sarvam.ai" target="_blank" rel="noopener">
+        <span class="material-symbols-outlined">bolt</span>
+        Powered by Sarvam AI
+      </a>
     </section>
 
     <section class="section-title">
@@ -778,6 +1118,15 @@
         <h4>Secure & Reliable</h4>
         <p>Robust, secure and scalable platform trusted by educators and students.</p>
       </article>
+      <article class="feature-card ai-card">
+        <div class="icon material-symbols-outlined">auto_awesome</div>
+        <div class="ai-card-copy">
+          <span class="ai-card-tag">AI Powered</span>
+          <h4>AI Test Analysis <em>· Sarvam AI</em></h4>
+          <p>Every test attempt gets an instant AI analysis — strengths, weaknesses and a personalized improvement plan
+            for each student.</p>
+        </div>
+      </article>
     </div>
 
     <div class="info-strip">
@@ -785,7 +1134,8 @@
         <span class="strip-dot"></span>
         <div>
           <h4>For Coaching Institutes & Educational Organizations</h4>
-          <p>Designed to support coaching centers and institutions with exam delivery, analytics and secure workflows.</p>
+          <p>Designed to support coaching centers and institutions with exam delivery, analytics and secure workflows.
+          </p>
         </div>
       </div>
       <div class="strip-item">
@@ -820,35 +1170,38 @@
       </div>
       <div class="details-cards">
         <article class="feature-card">
-            <div class="icon material-symbols-outlined">playlist_add_check</div>
-            <h4>Flexible Test Creation</h4>
-            <p>Create tests with multiple sections, various question types, custom markings, and negative marking options.</p>
-          </article>
+          <div class="icon material-symbols-outlined">playlist_add_check</div>
+          <h4>Flexible Test Creation</h4>
+          <p>Create tests with multiple sections, various question types, custom markings, and negative marking options.
+          </p>
+        </article>
         <article class="feature-card">
-            <div class="icon material-symbols-outlined">manage_accounts</div>
-            <h4>User Management</h4>
-            <p>Add and manage students, batches, and staff with ease. Set roles and authorizations for seamless control.</p>
-          </article>
-          <article class="feature-card">
-            <div class="icon material-symbols-outlined">insights</div>
-            <h4>Advanced Analytics</h4>
-            <p>Dive deep into performance with topic-wise analysis, comparison charts, rank lists, and individual insights.</p>
-          </article>
-          <article class="feature-card">
-            <div class="icon material-symbols-outlined">speed</div>
-            <h4>Instant Evaluation</h4>
-            <p>Automatic evaluation for objective questions with accurate results and instant feedback.</p>
-          </article>
-          <article class="feature-card">
-            <div class="icon material-symbols-outlined">description</div>
-            <h4>Detailed Reports</h4>
-            <p>Generate detailed reports including scorecards, response sheets, accuracy, time analysis and more.</p>
-          </article>
-          <article class="feature-card">
-            <div class="icon material-symbols-outlined">security</div>
-            <h4>Secure & Reliable</h4>
-            <p>Enterprise-grade security to protect your data. Reliable, scalable and always available.</p>
-          </article>
+          <div class="icon material-symbols-outlined">manage_accounts</div>
+          <h4>User Management</h4>
+          <p>Add and manage students, batches, and staff with ease. Set roles and authorizations for seamless control.
+          </p>
+        </article>
+        <article class="feature-card">
+          <div class="icon material-symbols-outlined">insights</div>
+          <h4>Advanced Analytics</h4>
+          <p>Dive deep into performance with topic-wise analysis, comparison charts, rank lists, and individual
+            insights.</p>
+        </article>
+        <article class="feature-card">
+          <div class="icon material-symbols-outlined">speed</div>
+          <h4>Instant Evaluation</h4>
+          <p>Automatic evaluation for objective questions with accurate results and instant feedback.</p>
+        </article>
+        <article class="feature-card">
+          <div class="icon material-symbols-outlined">description</div>
+          <h4>Detailed Reports</h4>
+          <p>Generate detailed reports including scorecards, response sheets, accuracy, time analysis and more.</p>
+        </article>
+        <article class="feature-card">
+          <div class="icon material-symbols-outlined">security</div>
+          <h4>Secure & Reliable</h4>
+          <p>Enterprise-grade security to protect your data. Reliable, scalable and always available.</p>
+        </article>
       </div>
     </section>
 
@@ -912,13 +1265,19 @@
             <td>✅</td>
           </tr>
           <tr>
+            <td>AI-Powered Test Analysis</td>
+            <td>❌</td>
+            <td>✅</td>
+          </tr>
+          <tr>
             <td>Coaching-Focused Workflow</td>
             <td>❌</td>
             <td>✅</td>
           </tr>
         </tbody>
       </table>
-      <p class="compare-conclusion">While Google Forms is suitable for basic quizzes, FalconLab provides a complete testing ecosystem designed specifically for schools and coaching institutes.</p>
+      <p class="compare-conclusion">While Google Forms is suitable for basic quizzes, FalconLab provides a complete
+        testing ecosystem designed specifically for schools and coaching institutes.</p>
     </section>
 
     <section class="additional-section">
@@ -1083,4 +1442,5 @@
     </footer>
   </div>
 </body>
+
 </html>
